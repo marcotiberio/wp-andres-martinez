@@ -10,44 +10,142 @@
 }
 
 // Site title
-.site-desktop-title a {
-  font-weight: bold;
-}
+
 
 // Mobile menu
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
+  ul.menu {
+    li {
+      max-height: 40px !important;
+      a {
+        padding: 10px !important;
+        text-align: center;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+    &:first-child {
+      a {
+        border-top: 1px solid $border-color;
+      }
+    }
+    &:last-child {
+      a {
+      border-bottom: none;
+      } 
+    }
+  }
 }
 
 .off-canvas {
   > ul.menu {
     height: 100vh;
     padding: 1rem;
+    
 
-    a {
-      color: $white;
-      font-weight: 600;
-      font-size: rem-calc(15);
-    }
   }
-
-  .menu .active > a { background-color: #ccc; }
 
 }
 
-.title-bar-title {
-  a {
-    font-size: 1rem;
-    color: #B9B9B9;
-  }
-}
 
-.mobile-menu,
-.mobile-off-canvas-menu {
 
-  .menu .is-active > a {
-    background-color: lighten($dark-nav-color, 5%);
-  }
+.title-bar {
+  position: relative;
+  .burger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 20px;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    background-color: transparent;
+    z-index: 31; }
+  
+  .burger:focus {
+    outline: none; }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000; }
+  
+  .burger span::before,
+  .burger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    content: ""; }
+  
+  .burger span::before {
+    top: -8px; }
+  
+  .burger span::after {
+    bottom: -8px; }
+  
+  /**
+   * Style 2
+   *
+   * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+   * down to center and transform into an "x".
+   */
+  .burger span {
+    transition: background-color 0.2s 0s; }
+  
+  .burger span::before,
+  .burger span::after {
+    transition-duration: 0.2s, 0.2s;
+    transition-delay: 0.2s, 0s; }
+  
+  .burger span::before {
+    transition-property: top, -webkit-transform;
+    transition-property: top, transform;
+    transition-property: top, transform, -webkit-transform;
+    -webkit-transition-property: top, -webkit-transform; }
+  
+  .burger span::after {
+    transition-property: bottom, -webkit-transform;
+    transition-property: bottom, transform;
+    transition-property: bottom, transform, -webkit-transform;
+    -webkit-transition-property: bottom, -webkit-transform; }
+  
+  /* active state, i.e. menu open */
+  .burger.active span {
+    background-color: transparent !important; }
+  
+  .burger.active span::before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0; }
+  
+  .burger.active span::after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 0; }
+  
+  .burger.active span::before,
+  .burger.active span::after {
+    transition-delay: 0s, 0.2s; }
 }
 
 // Tablet and desktop menu
@@ -55,34 +153,8 @@
 .top-bar {
 
   .top-bar-title a {
-    font-size: 1rem;
-    color: #B9B9B9;
     padding-left: 1rem;
-    line-height: 1.8;
   }
-
-  .menu a {
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
-
-    &:hover:not(.button) {
-      background-color: #42525D;
-    }
-  }
-
-  .menu .active > a { background-color: #ccc; }
-
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
-
-  .dropdown.menu .submenu { border: 0; }
-  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
-  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
-  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
 }
 
 .site-navigation {
