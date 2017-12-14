@@ -1,0 +1,28 @@
+.grid-x.about {
+    padding-top: 105px;
+    @include breakpoint(small) {
+        padding-top: 5%;
+        .cell {
+            margin-bottom: 1rem;
+        }
+    }
+}
+.photograph img {
+    width: 100%;
+}
+.social-media {
+    list-style-type: none;
+    margin-left: 0;
+    float: left;
+    li {
+        float: left;
+        &:not(:first-child) {
+            margin-left: 5px;
+        }
+        a {
+            i {
+                font-size: 22px;
+            }
+        }
+    }
+}

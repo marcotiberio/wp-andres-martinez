@@ -24,11 +24,6 @@
         border-bottom: 1px solid $border-color;
       }
     }
-    &:first-child {
-      a {
-        border-top: 1px solid $border-color;
-      }
-    }
     &:last-child {
       a {
       border-bottom: none;
@@ -51,6 +46,7 @@
 
 .title-bar {
   position: relative;
+  border-bottom: 1px solid $border-color;
   .burger {
     position: absolute;
     top: 10px;

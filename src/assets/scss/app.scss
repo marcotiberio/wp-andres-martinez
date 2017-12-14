@@ -62,6 +62,7 @@
 @import "global/_accessibility";
 @import "global/colors";
 @import "global/fonts";
+@import "global/variables";
 @import "global/wp-admin";
 @import "global/wp-overrides";
 
@@ -80,4 +81,7 @@
 
 // Templates
 @import "templates/front";
-@import "templates/kitchen-sink";
+@import "templates/about";
+
+//Fonts
+@import 'font-awesome';
