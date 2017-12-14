@@ -153,13 +153,21 @@
 .top-bar {
 
   .top-bar-title a {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 }
 
 .site-navigation {
   @include breakpoint(small only) {
     padding: 0; // prevents container visibility on small screens
+  }
+  ul.desktop-menu {
+    padding-right: 0;
+    li:last-child { 
+      a {
+        padding-right: 1.5rem; 
+      }
+     }
   }
 }
 
@@ -174,4 +182,8 @@
 
 .nav-next {
   float:right;
+}
+
+.site-header {
+  max-height: 40px;
 }

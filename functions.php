@@ -53,3 +53,52 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
+
+/** Remove Admin bar */
+add_filter('show_admin_bar', '__return_false');
+/** Projects Custom Post Type */
+function create_post_type() {
+    register_post_type( 'am_projects',
+      array(
+        'labels' => array(
+          'name' => __( 'Projects' ),
+          'singular_name' => __( 'Project' ),
+          'add_new' => _x('Add New', 'project'),
+          'add_new_item' => __('Add New Project'),
+          'edit_item' => __('Edit Project'),
+          'new_item' => __('New Project'),
+          'all_items' => __('All Projects'),
+          'view_item' => __('View Project'),
+          'search_items' => __('Search Projects'),
+          'not_found' =>  __('No projects found'),
+          'not_found_in_trash' => __('No projects found in Trash'), 
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'thumbnail', 'revisions'),
+      )
+    );
+    register_taxonomy(
+		'project_types',
+		'am_projects',
+		array(
+            'label' => __( 'Project Types' ),
+            'query_var' => 'type',
+			'rewrite' => array( 'slug' => 'type' ),
+			
+		)
+	);
+  }
+  add_theme_support( 'thumbnail' , array('am_projects', 'posts') ); 
+  
+  add_action( 'init', 'create_post_type' );
+
+  register_taxonomy(
+    'publication_types',
+    array(
+        'label' => __( 'Publication Types' ),
+        'query_var' => 'type',
+        'rewrite' => array( 'slug' => 'type' ),
+        
+    )
+);
