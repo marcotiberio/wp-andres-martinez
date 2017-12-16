@@ -1,0 +1,59 @@
+table {
+    th {
+        outline: none;
+        background-color: transparent !important;        
+        font-weight: normal !important;
+        &#date {
+            width: 13.6vw;
+        }
+        &#name {
+            width: 47vw;
+        }
+    }
+    tr {
+        background-color: transparent !important;
+        border-bottom: 1px solid #cccccc !important; 
+    }
+    thead, tbody {
+        border: none;
+        background-color: transparent;
+    }
+    td {
+        vertical-align: top;
+        &#namedisc {
+            &:hover {
+                span {
+                color: $active-color;
+                cursor: pointer;
+                }
+            }
+            .typemobile {
+                display: none;
+                margin-top: 2%;
+            }
+            .description {
+                color: black !important;
+                margin-top: 2%;
+                margin-bottom: 4%;
+            }
+        }
+       
+    }
+   @include breakpoint(small only){
+       thead {
+           display: none;
+       }
+       tr td {
+           display: block;
+           &#namedisc {
+            .typemobile {
+                display: block;
+            }
+        }
+           &.type {
+               display: none;
+           }
+       }
+   }
+    
+}

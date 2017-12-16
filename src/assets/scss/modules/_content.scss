@@ -23,32 +23,13 @@
       .sidebar { order: 1; }
     }
   }
-
-  // Full width template
-  .main-content-full-width {
-    @include xy-cell(12);
-  }
-
-  // Default template
-  .main-content {
-    @include breakpoint(small) {
-      @include xy-cell(12);
-    }
-
-    @include breakpoint(medium) {
-      @include xy-cell(8);
-    }
-  }
-
-  .sidebar {
-    @include breakpoint(small) {
-      @include xy-cell(12);
-    }
-
-    @include breakpoint(medium) {
-      @include xy-cell(4);
-      margin-top: 1rem;
-    }
-
+}
+.grid-x {
+  padding-top: 105px;
+  @include breakpoint(small) {
+      padding-top: 5%;
+      .cell {
+          margin-bottom: 1rem;
+      }
   }
 }

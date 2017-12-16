@@ -17,18 +17,15 @@
   display: none; // prevents repaint caused by JS hiding menu onload
   ul.menu {
     li {
-      max-height: 40px !important;
+      height: 40px !important;
       a {
-        padding: 10px !important;
+        height: 40px;
+        margin: 0 auto;
         text-align: center;
-        border-bottom: 1px solid $border-color;
+        border-bottom: 1px solid $border-color !important;
       }
     }
-    &:last-child {
-      a {
-      border-bottom: none;
-      } 
-    }
+ 
   }
 }
 
