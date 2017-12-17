@@ -13,6 +13,7 @@ import './lib/burger';
 import './lib/tablesorter';
 import './lib/activation';
 import './lib/tables';
+import './lib/singleproject';
 
 
 

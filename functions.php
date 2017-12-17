@@ -76,6 +76,7 @@ function create_post_type() {
         'public' => true,
         'has_archive' => true,
         'supports' => array('title', 'thumbnail', 'revisions'),
+        'rewrite' => array('slug' => 'work'),
       )
     );
     register_taxonomy(

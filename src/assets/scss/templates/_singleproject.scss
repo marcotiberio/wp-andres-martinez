@@ -1,0 +1,68 @@
+body.single {
+    overflow: hiddeN;
+    .singleproject {
+        height: calc(100vh - 120px);
+        padding-top: 0;
+        margin-top: 20px;
+        .cell {
+            margin-bottom: 0;
+        }
+        .orbit {
+            height: 100%;
+            width: 100%;
+        }
+        .orbit-container {
+            text-align: center;
+            overflow: visible;
+            height: 100% !important;
+            .orbit-slide {
+                height: 100%;
+                z-index: -1;
+                .orbit-image {
+                    width: initial;
+                    height: 90%;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+    }
+    .project-information {
+        background-color: white;
+        z-index: 99999 !important;
+        &.activated {
+            position: absolute;
+            bottom: 0;
+        }
+        .grid-x {
+            padding-top: 0;
+            .cell {
+                > span {
+                    margin-bottom: 5%;
+                    float: left;
+                    width: 100%;
+                    &:hover {
+                        cursor: pointer;
+                        color: $active-color;
+                    }
+                }
+                &.related-projects {
+                    ul {
+                        list-style-type: none;
+                        margin-left: 0;
+                        li {
+                            width: 100%;
+                            border-bottom: 1px solid $border-color;
+                            padding-bottom: 10px;
+                            &:not(:first-child) {
+                                padding-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
