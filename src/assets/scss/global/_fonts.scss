@@ -1,9 +1,9 @@
-a, p, h1, h2, ul, ol, dl {
+a, p, h1, h2, ul, ol, dl, span {
     font-size: rem-calc(15) !important; 
     line-height: 1.35 !important;
     letter-spacing: 0.01px !important;
     color: #161616;
-    &.small {
+    &.font-small {
         font-size: rem-calc(12) !important;
         line-height: 1.45;
     }

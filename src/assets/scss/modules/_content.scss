@@ -26,8 +26,12 @@
 }
 .grid-x {
   padding-top: 105px;
-  @include breakpoint(small) {
-      padding-top: 5%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  @include breakpoint(small only) {
+      padding-top: calc(5% + 40px);
       .cell {
           margin-bottom: 1rem;
       }

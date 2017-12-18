@@ -21,7 +21,8 @@ get_header(); ?>
         </div>
     </div>
 </div>
-
+<div class="scrollbarhiding">
+    </div>
 <div class="project-information">
     <div class="grid-x grid-padding-x">
         <div class="cell medium-4 small-12 name">

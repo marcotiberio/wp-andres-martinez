@@ -2,8 +2,6 @@ body.single {
     overflow: hiddeN;
     .singleproject {
         height: calc(100vh - 120px);
-        padding-top: 0;
-        margin-top: 20px;
         .cell {
             margin-bottom: 0;
         }
@@ -29,15 +27,47 @@ body.single {
             }
         }
     }
+    @keyframes marginmove {
+        from {margin-top: calc(100vh - 120px)};
+        to {margin-top: calc(40vh - 120px)};
+    }
+    @include breakpoint(small only) {
+        .scrollbarhiding {
+        width: 10px;
+        background-color: $white;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3000 !important;
+    }
+}
     .project-information {
         background-color: white;
-        z-index: 99999 !important;
-        &.activated {
-            position: absolute;
-            bottom: 0;
+        z-index: 2000 !important;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        @include breakpoint(small only) {
+            margin-top: calc(100vh - 120px);
+            position: relative;
+            bottom: initial;
+            right: initial;
+            left: initial;
+            overflow: scroll;
+            height: calc(100vh - 100px);
+            &.activated {
+                animation: marginmove 0.2s ease-in;
+                margin-top: calc(40vh - 120px);
+            }
+            
         }
+        
         .grid-x {
             padding-top: 0;
+            top: initial;
+            position: relative;
             .cell {
                 > span {
                     margin-bottom: 5%;

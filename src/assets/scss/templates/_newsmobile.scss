@@ -1,0 +1,34 @@
+.scrollbarhiding {
+    width: 10px;
+    background-color: $white;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.page-template-news {
+    .grid-x {
+        padding-top: 0;
+        .cell {
+            margin-bottom: 0;
+        }
+    }
+    #news_mobile {
+        padding-top: calc(5vh + 40px);
+        overflow: scroll;
+        height:100vh;
+        .single-news {
+            margin-bottom: 105px;
+            img {
+              width: 100%;
+            }
+            .news-info {
+              margin-top: 2.75%;
+              .date {
+                color: $active-color;
+                text-transform: lowercase;
+              }
+            }
+          }
+    }
+}

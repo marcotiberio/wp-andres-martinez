@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Work
-*/
 get_header(); ?>
 <div class="grid-x grid-padding-x fluid">
     <div class="cell small-12 medium-12">

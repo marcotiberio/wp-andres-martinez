@@ -1,5 +1,58 @@
 .home {
   .overview {
-    height: calc(100vh - 80px);
+    height: 100vh;
+    padding-top: 0;
+
+    .projects {
+      overflow: scroll;
+      padding-top: 105px;
+      height: 100vh;
+      
+      @include breakpoint(small only) {
+        padding-top: calc(5% + 40px);   
+      }
+      .featured-project {
+        margin-bottom: 105px;
+        .small-info {
+          margin-top: 2.75%;
+        }
+      }
+      
+    }
+    .scrollbarhiding {
+      width: 17px;
+      background-color: $white;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      @include breakpoint(small only) {
+        width: 10px;
+      }
+      &.news {
+        right: 0;
+      }
+      &.project {
+        left: calc(50% - 17px);
+
+      }
+    }
+    #news {
+      overflow: scroll;
+      padding-top: 105px;
+      height: 100vh;
+      .single-news {
+        margin-bottom: 105px;
+        img {
+          width: 100%;
+        }
+        .news-info {
+          margin-top: 2.75%;
+          .date {
+            color: $active-color;
+            text-transform: lowercase;
+          }
+        }
+      }
+    }
   }
 }
