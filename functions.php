@@ -86,20 +86,23 @@ function create_post_type() {
             'label' => __( 'Project Types' ),
             'query_var' => 'type',
 			'rewrite' => array( 'slug' => 'type' ),
-			
 		)
 	);
   }
   add_theme_support( 'thumbnail' , array('am_projects', 'posts') ); 
   
   add_action( 'init', 'create_post_type' );
+  register_taxonomy_for_object_type( 'project_types', 'am_projects' );
 
-  register_taxonomy(
+function initialize_taxonomy() {
+register_taxonomy(
     'publication_types',
+    'page',
     array(
         'label' => __( 'Publication Types' ),
         'query_var' => 'type',
         'rewrite' => array( 'slug' => 'type' ),
-        
     )
 );
+}
+add_action( 'init', 'initialize_taxonomy', 0 );

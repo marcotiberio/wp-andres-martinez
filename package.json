@@ -1,9 +1,9 @@
 {
-  "name": "ThePeople",
-  "title": "Martinez",
+  "name": "thepeople",
+  "title": "The People - Martinez",
   "version": "1.0.0",
-  "description": "Martinez Custom Theme by The People",
-  "homepage": "www.thepeople.world",
+  "description": "The People provides this theme for Andres Martinez",
+  "homepage": "https://www.thepeople.world",
   "license": "MIT",
   "main": "gulpfile.js",
   "scripts": {

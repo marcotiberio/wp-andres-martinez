@@ -29,7 +29,7 @@ get_header(); ?>
                 <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
                 <td><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
                 </tr>
-                <?php endwhile; wp_reset_postdata(); ?>  
+                <?php endwhile; wp_reset_postdata(); ?> 
             </tbody>
         
         </table>

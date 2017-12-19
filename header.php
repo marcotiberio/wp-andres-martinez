@@ -10,7 +10,7 @@
 
 ?>
 <!doctype html>
-<html class="no-js" <?php language_attributes(); ?> >
+<html class="no-js" <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,7 +32,7 @@
 				<span></span>
 			</button>
 				<span class="site-mobile-title title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo substr(get_bloginfo( 'name' ), 0, -1); ?></a>
 				</span>
 			</div>
 		</div>

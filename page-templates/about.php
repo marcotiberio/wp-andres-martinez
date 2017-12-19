@@ -33,9 +33,15 @@ $contact = get_field('contact');
                         <i class="fa <?php echo $icon; ?>"></i>
                     </a>
                 </li>
-            <?php    endwhile; ?>
+            <?php endwhile; ?>
         </ul>
-        <?php endif; ?>     
+        <?php endif; ?>
+        <div class="imprint">
+            <span>Imprint</span>
+            <div class="imprint-text hide">
+            &copy; <?php echo (date("Y")." ".substr(get_bloginfo( 'name' ), 0, -1)); ?>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -26,7 +26,7 @@ get_header(); ?>
                 <td id="namedisc"><span><?php echo $name; ?></span><div class="typemobile"><?php echo $type->name; ?></div><div class="description hide"><?php echo $desc; ?></div></td>
                 <td class="type"><?php echo $type->name; ?></td>
                 </tr>
-                <?php endwhile; ?>  
+                <?php endwhile; ?>
             </tbody>
             <?php endif; ?>
         </table>

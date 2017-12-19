@@ -17,3 +17,13 @@
         }
     }
 }
+.imprint {
+    float: left;
+    width: 100%;
+    span {
+        &:hover {
+            color: $active-color;
+            cursor: pointer;
+        }
+    }
+}
