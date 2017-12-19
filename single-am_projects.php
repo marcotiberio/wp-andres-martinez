@@ -21,6 +21,18 @@ get_header(); ?>
         </div>
     </div>
 </div>
+<script type="text/javascript" >
+$(document).ready(function(){
+$('.orbit').mousewheel(function(event){
+    if (event.deltaY < 0) {
+        isLTR = true;
+    } else {
+        isLTR = false;
+    }
+    $('.orbit').foundation('changeSlide', isLTR);
+});
+});
+</script>
 <div class="scrollbarhiding">
     </div>
 <div class="project-information">

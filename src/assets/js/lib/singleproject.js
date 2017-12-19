@@ -3,3 +3,5 @@ $('.project-information .cell span').click(function() {
     $('.project-information').toggleClass('activated');
 });
 
+
+

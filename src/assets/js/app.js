@@ -9,6 +9,7 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+import './lib/mousewheel';
 import './lib/burger';
 import './lib/tablesorter';
 import './lib/activation';

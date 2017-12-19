@@ -49,6 +49,10 @@ body.single {
         bottom: 0;
         right: 0;
         left: 0;
+        transition: height 1s;
+        &.activated {
+            transition: height 1s;
+        }
         @include breakpoint(small only) {
             margin-top: calc(100vh - 120px);
             position: relative;
