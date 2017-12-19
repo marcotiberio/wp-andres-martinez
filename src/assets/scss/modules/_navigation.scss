@@ -45,6 +45,11 @@
   position: relative;
   border-bottom: 1px solid $border-color;
   opacity: 0.9;
+  .site-mobile-title {
+    a {
+      font-weight: normal;
+    }
+  }
   .burger {
     position: absolute;
     top: 10px;
@@ -160,6 +165,10 @@
   z-index: 99999 !important;
   ul.desktop-menu {
     padding-right: 0;
+    li a {
+      padding-right: 10px;
+      padding-left: 0;
+    }
     li:last-child { 
       a {
         padding-right: 1.5vw; 
