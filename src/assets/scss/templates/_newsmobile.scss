@@ -18,15 +18,20 @@
         overflow: scroll;
         height:100vh;
         .single-news {
-            margin-bottom: 105px;
+            margin-bottom: 3vw;
+            padding-bottom: 3vw;
+            border-bottom: 1px solid $border-color;
             img {
               width: 100%;
             }
             .news-info {
-              margin-top: 2.75%;
+              margin-top: 1vw;
               .date {
-                color: $active-color;
+                color: $active-color !important;
                 text-transform: lowercase;
+              }
+              p {
+                margin-bottom: 0;
               }
             }
           }

@@ -12,9 +12,12 @@
         padding-top: calc(5% + 40px);   
       }
       .featured-project {
-        margin-bottom: 105px;
+        margin-bottom: 4vw;
+        img {
+          width: 100% !important;
+        }
         .small-info {
-          margin-top: 2.75%;
+          margin-top: 1.3vw;
         }
       }
       
@@ -41,15 +44,21 @@
       padding-top: 105px;
       height: 100vh;
       .single-news {
-        margin-bottom: 105px;
+        margin-bottom: 3vw;
+        padding-bottom: 3vw;
+        border-bottom: 1px solid $border-color;
+        width: calc(100% + 9px);
         img {
           width: 100%;
         }
         .news-info {
-          margin-top: 2.75%;
+          margin-top: 1vw;
           .date {
-            color: $active-color;
+            color: $active-color !important;
             text-transform: lowercase;
+          }
+          p {
+            margin-bottom: 0;
           }
         }
       }

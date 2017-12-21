@@ -1,14 +1,20 @@
 table {
+ display: none;
     th {
         outline: none;
         background-color: transparent !important;        
         font-weight: normal !important;
+        padding-left: 0 !important;
+        &:hover {
+            cursor: pointer;
+        }
         &#date {
             width: 13.6vw;
         }
         &#name {
             width: 47vw;
         }
+        
     }
     tr {
         background-color: transparent !important;
@@ -20,6 +26,16 @@ table {
     }
     td {
         vertical-align: top;
+        padding-top: 1% !important;
+        padding-bottom: 0.5% !important;
+        padding-left: 0 !important;
+        @include breakpoint(small only) {
+            padding-bottom: 2% !important;
+            padding-top: 0 !important;
+            &:first-child {
+                padding-top: 2% !important;
+            }
+        }
         &#namedisc {
             &:hover {
                 span {
@@ -33,8 +49,26 @@ table {
             }
             .description {
                 color: black !important;
-                margin-top: 2%;
-                margin-bottom: 4%;
+                max-height: 0;
+                opacity: 0;
+                margin: 0;
+                transition: all 0.2s ease-out;
+                @include breakpoint(small only) {
+                    max-height: 400px;
+                    margin-top: 2%;
+                    margin-bottom: 4%;
+                    opacity: 1;
+                }
+                &.activated {
+                    max-height: 400px;
+                    opacity: 1;
+                    transition: all 0.2s ease-in;
+                    margin-top: 2%;
+                    margin-bottom: 4%;
+                    @include breakpoint(small only) {
+                        max-height: 400px;
+                    }
+                }
             }
         }
        

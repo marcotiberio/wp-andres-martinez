@@ -19,5 +19,5 @@ $('#wtype').on('click',function(){
     $('#wdate .arrowup').addClass('hide')
 });
 $("#namedisc span").click(function() {
-      $(this).parent().children(".description").toggleClass("hide");
+      $(this).parent().children(".description").toggleClass("activated");
     });

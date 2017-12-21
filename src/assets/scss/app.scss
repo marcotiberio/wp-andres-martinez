@@ -1,19 +1,17 @@
 @charset 'utf-8';
 @font-face {
   font-family: 'Suisse Works';
-  src: url('fonts/SuisseWorks-Regular.eot');
   src: local('Suisse Works Regular'), local('SuisseWorks-Regular'),
-      url('fonts/SuisseWorks-Regular.eot?#iefix') format('embedded-opentype'),
-      url('fonts/SuisseWorks-Regular.woff2') format('woff2'),
-      url('fonts/SuisseWorks-Regular.woff') format('woff'),
-      url('fonts/SuisseWorks-Regular.ttf') format('truetype'),
-      url('fonts/SuisseWorks-Regular.svg#SuisseWorks-Regular') format('svg');
+      url('../fonts/SuisseWorks-Regular.woff2') format('woff2'),
+      url('../fonts/SuisseWorks-Regular.woff') format('woff'),
+      url('../fonts/SuisseWorks-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@import 'settings';
+
 @import 'foundation';
+@import 'settings';
 @import 'motion-ui';
 
 @include foundation-global-styles;

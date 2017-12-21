@@ -1,29 +1,52 @@
 body.single {
-    overflow: hiddeN;
+    overflow: hidden;
+    @include breakpoint(small only) {
+        overflow: auto;
+        .site-header {
+            position: fixed;
+            width: 100%;
+        }
+    }
+
     .singleproject {
-        height: calc(100vh - 120px);
+        padding-top: 0;
         .cell {
             margin-bottom: 0;
         }
         .orbit {
             height: 100%;
             width: 100%;
+            outline: none;
+            display: none;
         }
         .orbit-container {
             text-align: center;
+            outline: none;
             overflow: visible;
             height: 100% !important;
             .orbit-slide {
-                height: 100%;
+                height: 100vh;
                 z-index: -1;
                 .orbit-image {
                     width: initial;
-                    height: 90%;
+                    height: 80%;
                     position: absolute;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%,-50%);
                 }
+            }
+        }
+        @include breakpoint (small only) {
+            height: auto !important;
+            position: relative;
+            top: initial;
+        }
+        ul.images {
+            list-style-type: none;
+            margin-left: 0;
+            li {
+                margin-bottom: 20px;
             }
         }
     }
@@ -48,24 +71,30 @@ body.single {
         position: absolute;
         bottom: 0;
         right: 0;
-        left: 0;
-        transition: height 1s;
-        &.activated {
-            transition: height 1s;
-        }
+        left: 0;       
         @include breakpoint(small only) {
-            margin-top: calc(100vh - 120px);
             position: relative;
             bottom: initial;
             right: initial;
             left: initial;
-            overflow: scroll;
-            height: calc(100vh - 100px);
-            &.activated {
-                animation: marginmove 0.2s ease-in;
-                margin-top: calc(40vh - 120px);
-            }
             
+        }
+        .hidden-stuff {
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+            pointer-events: none;
+            @include breakpoint(small only) {
+                max-height: 400px;
+                opacity: 1;
+                pointer-events: all;
+            }
+            &.visible {
+                max-height: 400px;
+                opacity: 1;
+                transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+                pointer-events: all;
+            }
         }
         
         .grid-x {
@@ -74,12 +103,13 @@ body.single {
             position: relative;
             .cell {
                 > span {
+                    padding-top: 5%;
                     margin-bottom: 5%;
                     float: left;
                     width: 100%;
                     &:hover {
                         cursor: pointer;
-                        color: $active-color;
+                        color: $active-color !important;
                     }
                 }
                 &.related-projects {
