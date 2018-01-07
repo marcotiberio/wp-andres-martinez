@@ -23,7 +23,7 @@ get_header(); ?>
                 ?>
                 <tr>
                 <td><?php echo $date; ?></td>
-                <td id="namedisc"><span><?php echo $name; ?></span><div class="typemobile"><?php echo $type->name; ?></div><div class="description"><?php echo $desc; ?></div></td>
+                <td id="namedisc"><span><?php echo $name; ?></span><div class="typemobile"><?php echo $type->name; ?></div><div class="description <?php if (empty($desc)) { echo "hide"; } ?>"><?php echo $desc; ?></div></td>
                 <td class="type"><?php echo $type->name; ?></td>
                 </tr>
                 <?php endwhile; ?>

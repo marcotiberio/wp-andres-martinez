@@ -4,4 +4,3 @@ $('.project-information .cell span').click(function() {
 });
 
 
-

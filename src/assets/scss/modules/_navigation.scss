@@ -21,7 +21,6 @@
       a {
         height: 40px;
         margin: 0 auto;
-        text-align: center;
         border-bottom: 1px solid $border-color !important;
       }
     }
@@ -45,6 +44,7 @@
   position: relative;
   border-bottom: 1px solid $border-color;
   opacity: 0.9;
+  padding-left: 5vw !important;
   .site-mobile-title {
     a {
       font-weight: normal;

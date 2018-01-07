@@ -26,14 +26,14 @@ table {
     }
     td {
         vertical-align: top;
-        padding-top: 1% !important;
-        padding-bottom: 0.5% !important;
+        padding-top: 1vw !important;
+        padding-bottom: 0.5vw !important;
         padding-left: 0 !important;
         @include breakpoint(small only) {
-            padding-bottom: 2% !important;
+            padding-bottom: 2vw !important;
             padding-top: 0 !important;
             &:first-child {
-                padding-top: 2% !important;
+                padding-top: 2vw !important;
             }
         }
         &#namedisc {
@@ -45,7 +45,7 @@ table {
             }
             .typemobile {
                 display: none;
-                margin-top: 2%;
+                margin-top: 2vw;
             }
             .description {
                 color: black !important;
@@ -55,18 +55,19 @@ table {
                 transition: all 0.2s ease-out;
                 @include breakpoint(small only) {
                     max-height: 400px;
-                    margin-top: 2%;
-                    margin-bottom: 4%;
+                    margin-top: 2vw;
+                    margin-bottom: 8vw;
                     opacity: 1;
                 }
                 &.activated {
                     max-height: 400px;
                     opacity: 1;
                     transition: all 0.2s ease-in;
-                    margin-top: 2%;
-                    margin-bottom: 4%;
+                    margin-top: 1vw;
+                    margin-bottom: 3.5vw;
                     @include breakpoint(small only) {
                         max-height: 400px;
+                        margin-bottom: 8vw;
                     }
                 }
             }

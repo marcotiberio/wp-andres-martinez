@@ -31,7 +31,7 @@
   width: 100%;
   z-index: -1;
   @include breakpoint(small only) {
-      padding-top: calc(5% + 40px);
+      padding-top: calc(5vh + 40px);
       .cell {
           margin-bottom: 1rem;
       }

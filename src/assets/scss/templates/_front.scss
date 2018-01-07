@@ -13,6 +13,9 @@
       }
       .featured-project {
         margin-bottom: 4vw;
+        @include breakpoint(small only) {
+          width: calc(100% + 15px);
+        }
         img {
           width: 100% !important;
         }
@@ -29,7 +32,7 @@
       position: absolute;
       top: 0;
       @include breakpoint(small only) {
-        width: 10px;
+        width: 17px;
       }
       &.news {
         right: 0;

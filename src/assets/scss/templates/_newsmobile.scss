@@ -1,12 +1,13 @@
-.scrollbarhiding {
-    width: 10px;
-    background-color: $white;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 .page-template-news {
+    .scrollbarhiding {
+        width: 17px;
+        background-color: $white;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .grid-x {
         padding-top: 0;
         .cell {
@@ -14,12 +15,12 @@
         }
     }
     #news_mobile {
-        padding-top: calc(5vh + 40px);
+        padding-top: calc(5vh + 40px + 2vw);
         overflow: scroll;
         height:100vh;
         .single-news {
-            margin-bottom: 3vw;
-            padding-bottom: 3vw;
+            margin-bottom: 4vw;
+            padding-bottom: 4vw;
             border-bottom: 1px solid $border-color;
             img {
               width: 100%;
