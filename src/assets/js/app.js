@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
-
 window.$ = $;
 
 
@@ -15,7 +14,6 @@ import './lib/tablesorter';
 import './lib/activation';
 import './lib/tables';
 import './lib/singleproject';
-
 
 
 $(document).foundation();

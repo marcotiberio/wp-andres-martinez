@@ -15,6 +15,10 @@ table {
             width: 47vw;
         }
         
+        &#clear {
+            display: none;
+        }
+        
     }
     tr {
         background-color: transparent !important;
@@ -36,6 +40,11 @@ table {
                 padding-top: 2vw !important;
             }
         }
+        &.type:hover {
+            color: $active-color;
+            cursor: pointer;
+        }
+            
         &#namedisc {
             &:hover {
                 span {
@@ -90,5 +99,12 @@ table {
            }
        }
    }
-    
+&.filtered {
+  th#clear {
+      display: block;
+  }
+  tbody tr:not(.filter) {
+      display: none;
+  }  
+}    
 }

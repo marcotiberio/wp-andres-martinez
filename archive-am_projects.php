@@ -5,9 +5,10 @@ get_header(); ?>
         <table id="work" class="work tablesorter">
             <thead>
                 <tr>
-                    <th id="wdate">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="wname">Name</th>
-                    <th id="wtype">Type <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
+                    <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
+                    <th id="name">Name</th>
+                    <th id="type">Type <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
+                    <th id="clear">Clear Filter</th>
                 </tr>
             </thead>
             <?php 
@@ -23,15 +24,18 @@ get_header(); ?>
                 <?php while ( $works->have_posts() ): $works->the_post();
                 $date = get_field('year');
                 $tags = get_the_terms($post->ID,'project_types');
+                $cats = array(
+
+                );
+                foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
                 ?>
-                <tr>
+                <tr class="<?php foreach ($cats as $cat) { echo $cat; } ?>">
                 <td><?php echo $date; ?></td>
                 <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
-                <td><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
+                <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
                 </tr>
                 <?php endwhile; wp_reset_postdata(); ?> 
             </tbody>
-        
         </table>
     </div>
     
