@@ -102,6 +102,8 @@ table {
 &.filtered {
   th#clear {
       display: block;
+      z-index: 100;
+      text-align: left !important;
   }
   tbody tr:not(.filter) {
       display: none;
