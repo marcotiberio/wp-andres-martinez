@@ -7,7 +7,7 @@ get_header(); ?>
                 <tr>
                     <th id="date">Date</th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="type">Type <span id="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
+                    <th id="type">Type <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="clear">Clear Filter</th>
                 </tr>
             </thead>
