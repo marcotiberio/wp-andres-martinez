@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
 npm-debug.log
-dist
 config.yml
 *.sass-cache*
 *.log
@@ -9,3 +8,4 @@ config.yml
 *.swp
 packaged/
 wpcs/
+dist/assets/fonts/
