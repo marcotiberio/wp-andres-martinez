@@ -187,7 +187,10 @@ table td#namedisc .description.activated {
 }
 
 body.single .project-information .grid-x .cell>span {
-    margin-bottom: calc(5% + 5px) !important;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    float: left;
+    width: 100%;
 }
 
 .news-info a {
@@ -245,7 +248,7 @@ body.single .project-information .grid-x .cell>span {
 
 .home .overview .projects {
     overflow: visible !important;
-		    height: 100% !important;
+    height: 100% !important;
 
 }
 
