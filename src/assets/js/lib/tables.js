@@ -8,10 +8,26 @@ $('#type').on('click',function(){
     $('#date .arrowdown').removeClass('hide');
     $('#date .arrowup').addClass('hide');
 });
+$("#name").on("click", function() {                 //NEW ARROWDOWN-UP
+    $("#name .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
+    $("#name .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+    $("#date .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
+    $("#date .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+
+    $(".description").removeClass("activated")      //NEW ARROWDOWN-UP
+}),
 $('#wdate').on('click',function(){
     $('#wdate .arrowdown').toggleClass('hide');
     $('#wdate .arrowup').toggleClass('hide');
 });
+$("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
+    $("#wname .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
+    $("#wname .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+    $("#wdate .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
+    $("#wdate .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+
+    $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
+}),
 $('#wtype').on('click',function(){
     $('#wtype .arrowdown').toggleClass('hide');
     $('#wtype .arrowup').toggleClass('hide');

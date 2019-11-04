@@ -5,8 +5,8 @@ get_header(); ?>
         <table id="work" class="work tablesorter">
             <thead>
                 <tr>
-                    <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="name">Name</th>
+                    <th id="date">Date></th>
+                    <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="type">Type <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="clear">Clear Filter</th>
                 </tr>
@@ -30,9 +30,9 @@ get_header(); ?>
                 foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
                 ?>
                 <tr class="<?php foreach ($cats as $cat) { echo $cat; } ?>">
-                <td><?php echo $date; ?></td>
-                <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
-                <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
+                    <td><?php echo $date; ?></td>
+                    <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
+                    <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
                 </tr>
                 <?php endwhile; wp_reset_postdata(); ?> 
             </tbody>
