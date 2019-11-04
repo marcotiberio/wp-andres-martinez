@@ -83,7 +83,7 @@ function sass() {
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
-      browsers: COMPATIBILITY
+      // browsers: COMPATIBILITY
     }))
 
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
@@ -96,6 +96,7 @@ function sass() {
 }
 
 let webpackConfig = {
+  mode: (PRODUCTION ? 'production' : 'development'),
   module: {
     rules: [
       {

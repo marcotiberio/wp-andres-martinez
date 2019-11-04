@@ -4,9 +4,9 @@ window.$ = $;
 
 
 import Foundation from 'foundation-sites';
-// If you want to pick and choose which modules to include, comment out the above and uncomment
-// the line below
-//import './lib/foundation-explicit-pieces';
+/* If you want to pick and choose which modules to include, comment out the above and uncomment
+ the line below
+import './lib/foundation-explicit-pieces'; */
 
 import './lib/mousewheel';
 import './lib/burger';
@@ -16,4 +16,4 @@ import './lib/tables';
 import './lib/singleproject';
 
 
-$(document).foundation();
+// $(document).foundation();
