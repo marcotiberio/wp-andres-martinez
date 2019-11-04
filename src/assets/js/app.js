@@ -16,4 +16,4 @@ import './lib/tables';
 import './lib/singleproject';
 
 
-// $(document).foundation();
+$(document).foundation();
