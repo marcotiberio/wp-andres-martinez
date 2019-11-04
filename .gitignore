@@ -8,4 +8,3 @@ config.yml
 *.swp
 packaged/
 wpcs/
-dist/assets/fonts/
