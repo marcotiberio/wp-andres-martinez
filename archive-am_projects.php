@@ -14,7 +14,7 @@ get_header(); ?>
             <?php 
             $args = array(
                 'post_type' => 'am_projects',
-                'posts_per_page' => 10,
+                'posts_per_page' => -1,
                 'meta_key' => 'year',
                 'orderby' => 'meta_value',
                 'order'	=> 'DESC'
