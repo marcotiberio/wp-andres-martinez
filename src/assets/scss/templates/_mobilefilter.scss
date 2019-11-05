@@ -13,7 +13,7 @@
     -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
     
         @include breakpoint(large) {
-            display: none !important;
+            display: block !important;
         }
 }
 
