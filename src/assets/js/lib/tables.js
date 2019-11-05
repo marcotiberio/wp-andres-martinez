@@ -43,14 +43,11 @@ $(".type").click( function() {
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).addClass('filter');
     $(".tablesorter").addClass('filtered');
+    window.location.hash = $(this).attr("class");
+    e.preventDefault();
 });
 
 $("#clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
-});
-
-$(".type").click(function(e) {
-    window.location.hash = $(this).attr("href");
-    e.preventDefault();
 });
