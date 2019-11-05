@@ -41,8 +41,10 @@ nav > a:active {
 
 #clear {
     @include breakpoint(small) {
+        color: #a4a4a4 !important;
         text-align: right !important;
         padding-bottom: 5% !important;
+        text-decoration: underline !important;
     }
 }
 
