@@ -31,7 +31,7 @@ get_header(); ?>
 </div>
 <script type="text/javascript" >
 $(document).ready(function(){
-    setTimeout(function() {$('.orbit').fadeIn(250); }, 200);
+    setTimeout(function() {$('.orbit').fadeIn(250); }, 500);
     var isAnimating = false;
 $('.orbit-container').mousewheel(function(event){
     if(isAnimating) {
