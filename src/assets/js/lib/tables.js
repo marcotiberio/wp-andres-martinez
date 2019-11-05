@@ -50,8 +50,7 @@ $("#clear").click(function(){
     $(".filter").removeClass("filter");
 });
 
-
 $(".type").click(function(e) {
-    window.location.hash = $(this).attr("class");
+    window.location.hash = $(this).attr("<?php echo $tag->name; ?>");
     e.preventDefault();
 });
