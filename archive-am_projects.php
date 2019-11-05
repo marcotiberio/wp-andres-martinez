@@ -24,9 +24,9 @@ get_header(); ?>
                 <?php while ( $works->have_posts() ): $works->the_post();
                 $date = get_field('year');
                 $tags = get_the_terms($post->ID,'project_types');
-                // $cats = array(
-                // );
-                // foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
+                $cats = array(
+                );
+                foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
                 ?>
                 <tr>
                     <td><?php echo $date; ?></td>
