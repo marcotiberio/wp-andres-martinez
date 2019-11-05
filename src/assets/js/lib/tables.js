@@ -51,7 +51,7 @@ $(".type").click( function() {
 
 });
 
-$("#clear").click(function(){
+$(".clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');
