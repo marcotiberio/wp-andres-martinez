@@ -13,11 +13,7 @@
     -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
     
         @include breakpoint(large) {
-            display: none;
-            nav > a {
-                padding-right: 20px;
-                color: red !important;
-            }
+            display: none !important;
         }
 }
 
