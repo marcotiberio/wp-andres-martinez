@@ -14,9 +14,6 @@
     
         @include breakpoint(medium) {
             display: block !important;
-            #clear {
-                text-align: right;
-            }
         }
 }
 
@@ -40,6 +37,12 @@ nav > a {
 
 nav > a:active {
     color: black !important;
+}
+
+#clear {
+    @include breakpoint(small) {
+        text-align: right !important;
+    }
 }
 
 #clear:hover {
