@@ -37,7 +37,7 @@ $contact = get_field('contact');
         </ul>
         <?php endif; ?>
         <div class="imprint">
-            <span>Imprint</span>
+            <span>Ciao</span>
             <div class="imprint-text hide">
             &copy; <?php echo (date("Y")." ".substr(get_bloginfo( 'name' ), 0, -1)); ?>
             </div>
