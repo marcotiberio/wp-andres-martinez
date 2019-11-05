@@ -1,7 +1,7 @@
 <?php
 get_header(); ?>
 <div class="grid-x grid-padding-x fluid">
-    <div class="cell small-12 medium-12">
+    <span class="cell small-12 medium-12">
     
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
@@ -17,8 +17,8 @@ get_header(); ?>
                 <tr>
                     <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="type">Type</th>
-                    <th id="clear">Back to all</th>
+                    <th id="type">Type <span id="clear">Back to all</span></th>
+                    <!-- <th id="clear">Back to all</th> -->
                 </tr>
             </thead>
             <?php 
