@@ -5,6 +5,16 @@ Template Name: Publications
 get_header(); ?>
 <div class="grid-x grid-padding-x fluid">
     <div class="cell small-12 medium-12">
+
+        <section class="mobilefilter">
+            <nav class="mobilefilter-list">
+                <a href="#" class="type">Teaching</a>
+                <a href="#" class="type">Residential</a>
+                <a href="#" class="type">Office</a>
+                <a href="#" class="type">Urban Design</a>
+            </nav>
+        </section>
+
         <table id="publications" class="publications tablesorter">
             <thead>
                 <tr>
