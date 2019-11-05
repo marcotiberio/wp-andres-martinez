@@ -51,6 +51,6 @@ $("#clear").click(function(){
 });
 
 $(".type").click(function(e) {
-    window.location.hash = $(this).attr("<?php foreach ($tags as $tag) { echo $tag->name; } ?>");
+    window.location.hash = $(this).attr("<?php echo $tag; ?>");
     e.preventDefault();
 });

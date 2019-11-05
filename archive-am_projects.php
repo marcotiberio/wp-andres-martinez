@@ -2,6 +2,15 @@
 get_header(); ?>
 <div class="grid-x grid-padding-x fluid">
     <div class="cell small-12 medium-12">
+    
+    <?php while ( $works->have_posts() ): $works->the_post();
+    $tags = get_the_terms($post->ID,'project_types');
+    $cats = array(
+
+    );
+    foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
+    ?>
+    
 
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
