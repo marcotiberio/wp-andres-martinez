@@ -14,7 +14,7 @@
     
         @include breakpoint(medium) {
             display: block !important;
-            padding: 0 0 5% 0;
+            padding: 0 0 5% 0 !important;
         }
 }
 
@@ -22,7 +22,7 @@
 .mobilefilter::-webkit-scrollbar {
     display: none; }
 
-    
+
 .mobilefilter-list {
     width: 100%;
 }
