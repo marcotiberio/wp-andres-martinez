@@ -12,16 +12,10 @@
     -webkit-overflow-scrolling: touch; /* [3] */
     -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
     
-        @include breakpoint(large) {
+        @include breakpoint(medium) {
             display: none !important;
         }
 }
-
-// @include breakpoint(large) {
-//     .mobilefilter {
-//         display: none; 
-//     }
-// }
 
 /* [5] */
 .mobilefilter::-webkit-scrollbar {
