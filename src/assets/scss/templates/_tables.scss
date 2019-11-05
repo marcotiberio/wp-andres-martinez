@@ -15,7 +15,7 @@ table {
             width: 47vw;
         }
         
-        &#clear {
+        &.clear {
             display: none;
         }
         
@@ -100,7 +100,7 @@ table {
        }
    }
 &.filtered {
-  th#clear {
+  th.clear {
       display: block;
   }
   tbody tr:not(.filter) {
