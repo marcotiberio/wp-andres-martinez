@@ -15,13 +15,10 @@ get_header(); ?>
         <table id="work" class="work tablesorter">
             <thead>
                 <tr>
-                    <th id="date">Date</th>
+                    <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="type">Type 
-                        <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span>
-                        <div id="clear">Back to all</div>
-                    </th>
-                    <!-- <div id="clear">Back to all</div> -->
+                    <th id="type">Type</th>
+                    <th id="clear">Back to all</th>
                 </tr>
             </thead>
             <?php 
