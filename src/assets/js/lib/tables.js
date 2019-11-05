@@ -11,8 +11,6 @@ $('#type').on('click',function(){
 $("#name").on("click", function() {                 //NEW ARROWDOWN-UP
     $("#name .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
     $("#name .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
-    // $("#date .arrowdown").removeClass("hide"),   //NEW ARROWDOWN-UP
-    // $("#date .arrowup").addClass("hide"),        //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")      //NEW ARROWDOWN-UP
 }),
@@ -28,12 +26,12 @@ $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
 }),
-$('#wtype').on('click',function(){
-    $('#wtype .arrowdown').toggleClass('hide');
-    $('#wtype .arrowup').toggleClass('hide');
-    $('#wdate .arrowdown').toggleClass('hide');
-    $('#wdate .arrowup').toggleClass('hide');
-});
+// $('#wtype').on('click',function(){
+//     $('#wtype .arrowdown').toggleClass('hide');
+//     $('#wtype .arrowup').toggleClass('hide');
+//     $('#wdate .arrowdown').toggleClass('hide');
+//     $('#wdate .arrowup').toggleClass('hide');
+// });
 $("#namedisc span").click(function() {
       $(this).parent().children(".description").toggleClass("activated");
     });
