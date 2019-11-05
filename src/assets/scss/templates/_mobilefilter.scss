@@ -1,0 +1,43 @@
+/*
+[1]: All items a forced onto a single line, causing the overflow when necessary.
+[2]: Automatic overflow means a scroll bar won’t be present if it isn’t needed
+[3]: Make it smooth scrolling on iOS devices
+[4]: Hide the ugly scrollbars in Edge until the scrollable area is hovered
+[5]: Hide the scroll bar in WebKit browsers
+*/
+.mobilefilter {
+    white-space: nowrap; /* [1] */
+    overflow-x: auto; /* [2] */
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */ 
+}
+
+@include breakpoint(large) {
+    .mobilefilter {
+        display: none; 
+    }
+}
+
+/* [5] */
+.mobilefilter::-webkit-scrollbar {
+    display: none; }
+
+.mobilefilter {
+    display: block;
+    padding: 0 0 5% 0; 
+}
+
+nav {
+    width: 100%;
+}
+
+nav > a {
+    padding-right: 20px;
+    color: #a4a4a4 !important;
+}
+
+nav > a:active {
+    color: black !important;
+}
+
+/* Mobile Filter */
