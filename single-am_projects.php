@@ -53,13 +53,13 @@ $('.orbit-container').mousewheel(function(event){
 $('.orbit').on('beforeslidechange.zf.orbit', function() {
     isAnimating = true;
 });
-// $(".orbit-container").mousewheel(function() {
-//   clearTimeout($.data(this, 'timer'));
-//   $.data(this, 'timer', setTimeout(function() {
-//     console.log("Ready")
-//      isAnimating = false;
-//   }, 150));
-// });
+$(".orbit-container").mousewheel(function() {
+  clearTimeout($.data(this, 'timer'));
+  $.data(this, 'timer', setTimeout(function() {
+    console.log("Ready")
+     isAnimating = false;
+  }, 150));
+});
 });
 
 </script>
