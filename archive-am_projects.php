@@ -25,10 +25,11 @@ get_header(); ?>
                 $date = get_field('year');
                 $tags = get_the_terms($post->ID,'project_types');
                 $cats = array(
+
                 );
                 foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
                 ?>
-                <tr>
+                <tr class="<?php foreach ($cats as $cat) { echo $cat; } ?>">
                     <td><?php echo $date; ?></td>
                     <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
                     <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
