@@ -7,7 +7,7 @@
 */
 .mobilefilter {
     display: block;
-    padding: 0 0 5% 0; 
+    padding: 0; 
     white-space: nowrap; /* [1] */
     overflow-x: auto; /* [2] */
     -webkit-overflow-scrolling: touch; /* [3] */
@@ -15,6 +15,7 @@
     
         @include breakpoint(medium) {
             display: block !important;
+            padding: 0 0 5% 0 !important;
         }
 }
 
