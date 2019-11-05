@@ -49,3 +49,9 @@ $("#clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
 });
+
+
+$(".type").click(function(e) {
+    window.location.hash = $(this).attr("class");
+    e.preventDefault();
+});
