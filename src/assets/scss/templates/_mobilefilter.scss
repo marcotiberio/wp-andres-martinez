@@ -14,6 +14,9 @@
     
         @include breakpoint(medium) {
             display: block !important;
+            #clear {
+                text-align: right;
+            }
         }
 }
 
