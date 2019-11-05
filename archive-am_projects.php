@@ -6,9 +6,9 @@ get_header(); ?>
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
             <a href="#" class="type">Teaching</a>
-            <a href="#">Residential</a>
-            <a href="#">Office</a>
-            <a href="#">Urban Design</a>
+            <a href="#" class="type">Residential</a>
+            <a href="#" class="type">Office</a>
+            <a href="#" class="type">Urban Design</a>
         </nav>
     </section>
     
