@@ -14,7 +14,7 @@
     -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
     
         @include breakpoint(medium) {
-            display: block !important;
+            display: none !important;
             padding: 0 !important;
         }
 }
