@@ -16,8 +16,8 @@ table {
         }
         
         &#clear {
-            display: none;
-            @include breakpoint(small) {
+            display: none !important;
+            @include breakpoint(medium) {
                 display: block !important;
             }
         }
