@@ -47,7 +47,7 @@ $(".type").click( function() {
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).addClass('filter');
     $(".tablesorter").addClass('filtered');
-    $(".type").addClass('hideth');
+    $("#type").addClass('hideth');
 
 });
 
