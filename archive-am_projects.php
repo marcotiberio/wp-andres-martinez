@@ -5,10 +5,10 @@ get_header(); ?>
     
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
-            <a href="#" class="type">Teaching</a>
-            <a href="#" class="type">Residential</a>
-            <a href="#" class="type">Office</a>
-            <a href="#" class="type">Urban Design</a>
+            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Teaching</a>
+            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Residential</a>
+            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Office</a>
+            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>-design">Urban Design</a>
         </nav>
     </section>
     

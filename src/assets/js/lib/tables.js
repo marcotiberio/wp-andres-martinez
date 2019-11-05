@@ -51,6 +51,6 @@ $("#clear").click(function(){
 });
 
 $(".type").click(function(e) {
-    window.location.hash = $(this).attr("<?php echo $tag; ?>");
+    window.location.hash = $(this).attr("class");
     e.preventDefault();
 });
