@@ -31,7 +31,7 @@ get_header(); ?>
 </div>
 <script type="text/javascript" >
 $(document).ready(function(){
-    setTimeout(function() {$('.orbit').fadeIn(250); }, 800);
+    setTimeout(function() {$('.orbit').fadeIn(250); }, 500);
     var isAnimating = false;
 $('.orbit-container').mousewheel(function(event){
     if(isAnimating) {
@@ -53,19 +53,19 @@ $('.orbit-container').mousewheel(function(event){
 $('.orbit').on('beforeslidechange.zf.orbit', function() {
     isAnimating = true;
 });
-$(".orbit-container").mousewheel(function() {
-  clearTimeout($.data(this, 'timer'));
-  $.data(this, 'timer', setTimeout(function() {
-    console.log("Ready")
-     isAnimating = false;
-  }, 150));
-});
+// $(".orbit-container").mousewheel(function() {
+//   clearTimeout($.data(this, 'timer'));
+//   $.data(this, 'timer', setTimeout(function() {
+//     console.log("Ready")
+//      isAnimating = false;
+//   }, 150));
+// });
 });
 
 </script>
 
 <div class="scrollbarhiding">
-    </div>
+</div>
 <div class="project-information">
     <div class="grid-x grid-padding-x">
         <div class="cell medium-4 small-12 name">
