@@ -47,12 +47,12 @@ $(".type").click( function() {
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).addClass('filter');
     $(".tablesorter").addClass('filtered');
-    $(".sorter-false").addClass('hideth');
+    $(".sorter-false").addClass('hideth');            //SHOW-HIDE TH
 
 });
 
 $(".clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
-    $(".sorter-false").removeClass('hideth');
+    $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 });
