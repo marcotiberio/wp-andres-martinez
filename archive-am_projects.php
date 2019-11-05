@@ -13,10 +13,10 @@ get_header(); ?>
     
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
-            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Teaching</a>
-            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Residential</a>
-            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Office</a>
-            <a href="#" class="type" id="<?php foreach ($tags as $tag) { echo $tag->name; } ?>">Urban Design</a>
+            <a href="#" class="type" id="<?php foreach ($cats as $cat) { echo $cat; } ?>">Teaching</a>
+            <a href="#" class="type" id="<?php foreach ($cats as $cat) { echo $cat; } ?>">Residential</a>
+            <a href="#" class="type" id="<?php foreach ($cats as $cat) { echo $cat; } ?>">Office</a>
+            <a href="#" class="type" id="<?php foreach ($cats as $cat) { echo $cat; } ?>">Urban Design</a>
         </nav>
     </section>
     
