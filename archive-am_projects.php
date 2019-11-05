@@ -7,8 +7,8 @@ get_header(); ?>
                 <tr>
                     <th id="date">Date</th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="type">Type <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="clear">Back to all</th>
+                    <th id="type">Type <span id="clear">Back to all</th>
+                    <!-- <th id="clear">Back to all</th> -->
                 </tr>
             </thead>
             <?php 
