@@ -51,6 +51,6 @@ $("#clear").click(function(){
 });
 
 $(".type").click(function(e) {
-    window.location.hash = $(this).attr("id");
+    window.location.hash = $(this).attr("href");
     e.preventDefault();
 });
