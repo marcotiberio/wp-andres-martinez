@@ -29,22 +29,21 @@ $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
     $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
 }),
 $('#wtype').on('click',function(){
-    var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
-    $("." + filter).addClass('filter');
-    $(".tablesorter").addClass('filtered');
+    $("table.filtered").removeClass("filtered");
+    $(".filter").removeClass("filter");
 });
 $("#namedisc span").click(function() {
       $(this).parent().children(".description").toggleClass("activated");
     });
 
 
-// $(".type").click( function() {
-//     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
-//     $("." + filter).addClass('filter');
-//     $(".tablesorter").addClass('filtered');
-// });
-
-$("#clear").click(function(){
-    $("table.filtered").removeClass("filtered");
-    $(".filter").removeClass("filter");
+$(".type").click( function() {
+    var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
+    $("." + filter).addClass('filter');
+    $(".tablesorter").addClass('filtered');
 });
+
+// $("#clear").click(function(){
+//     $("table.filtered").removeClass("filtered");
+//     $(".filter").removeClass("filter");
+// });
