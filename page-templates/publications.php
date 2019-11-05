@@ -22,7 +22,7 @@ get_header(); ?>
                     <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="type">Type</th>
-                    <th id="clear">Back to Filter</th>
+                    <th id="clear">Back to all</th>
                 </tr>
             </thead>
             <?php if ( have_rows('publications') ): ?>
