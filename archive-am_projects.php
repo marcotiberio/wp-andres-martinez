@@ -5,7 +5,7 @@ get_header(); ?>
 
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
-            <a href="#" class="type">Teaching</a>
+            <a href="teaching" class="type">Teaching</a>
             <a href="#" class="type">Residential</a>
             <a href="#" class="type">Office</a>
             <a href="#" class="type">Urban Design</a>
