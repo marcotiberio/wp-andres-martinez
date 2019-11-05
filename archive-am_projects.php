@@ -29,7 +29,7 @@ get_header(); ?>
                 );
                 foreach ($tags as $tag) { array_push($cats, str_replace(' ', '_',strtolower($tag->name))); } 
                 ?>
-                <tr class="<?php foreach ($cats as $cat) { echo $cat; } ?>">
+                <tr>
                     <td><?php echo $date; ?></td>
                     <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
                     <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
