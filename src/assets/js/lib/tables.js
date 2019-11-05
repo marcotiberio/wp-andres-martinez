@@ -28,9 +28,11 @@ $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
 }),
-$('#wtype').click(function(){
-    $("table.filtered").removeClass("filtered");
-    $(".filter").removeClass("filter");
+$('#wtype').on('click',function(){
+    $('#wtype .arrowdown').toggleClass('hide');
+    $('#wtype .arrowup').toggleClass('hide');
+    $('#wdate .arrowdown').toggleClass('hide');
+    $('#wdate .arrowup').toggleClass('hide');
 });
 $("#namedisc span").click(function() {
       $(this).parent().children(".description").toggleClass("activated");
@@ -43,7 +45,7 @@ $(".type").click( function() {
     $(".tablesorter").addClass('filtered');
 });
 
-// $("#clear").click(function(){
-//     $("table.filtered").removeClass("filtered");
-//     $(".filter").removeClass("filter");
-// });
+$("#clear").click(function(){
+    $("table.filtered").removeClass("filtered");
+    $(".filter").removeClass("filter");
+});
