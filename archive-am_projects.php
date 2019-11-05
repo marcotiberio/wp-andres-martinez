@@ -18,7 +18,7 @@ get_header(); ?>
                     <th id="date">Date</th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="type">Type <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th id="clear">Back to all</th>
+                    <div id="clear">Back to all</div>
                 </tr>
             </thead>
             <?php 
