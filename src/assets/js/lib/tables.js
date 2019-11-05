@@ -32,7 +32,10 @@ $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
 });
 
 $('#wtype').on('click',function(){
-    $("#wtype").addClass('hideth');
+    $('#wtype .arrowdown').toggleClass('hide');
+    $('#wtype .arrowup').toggleClass('hide');
+    $('#wdate .arrowdown').toggleClass('hide');
+    $('#wdate .arrowup').toggleClass('hide');
 });
 
 $("#namedisc span").click(function() {
@@ -44,10 +47,12 @@ $(".type").click( function() {
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).addClass('filter');
     $(".tablesorter").addClass('filtered');
+    $(".sorter-false").addClass('hideth');
+
 });
 
 $("#clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
-    $("#wtype").removeClass('hideth');
+    $(".sorter-false").removeClass('hideth');
 });
