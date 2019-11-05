@@ -39,6 +39,10 @@
     color: black !important;
 }
 
+.mobilefilter-list > a:focus {
+    color: black !important;
+}
+
 // #clear {
 //     @include breakpoint(small) {
 //         color: #a4a4a4 !important;
