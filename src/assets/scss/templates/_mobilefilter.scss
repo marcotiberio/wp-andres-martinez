@@ -39,18 +39,18 @@ nav > a:active {
     color: black !important;
 }
 
-#clear {
-    @include breakpoint(small) {
-        color: #a4a4a4 !important;
-        text-align: right !important;
-        padding-bottom: 5% !important;
-        text-decoration: underline !important;
-    }
-}
+// #clear {
+//     @include breakpoint(small) {
+//         color: #a4a4a4 !important;
+//         text-align: right !important;
+//         padding-bottom: 5% !important;
+//         text-decoration: underline !important;
+//     }
+// }
 
-#clear:hover {
-    cursor: pointer;
-    color: red !important;
-}
+// #clear:hover {
+//     cursor: pointer;
+//     color: red !important;
+// }
 
 /* Mobile Filter */

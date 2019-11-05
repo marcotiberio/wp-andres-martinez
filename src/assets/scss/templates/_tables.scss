@@ -16,10 +16,7 @@ table {
         }
         
         &#clear {
-            display: none !important;
-            @include breakpoint(medium) {
-                display: block !important;
-            }
+            display: none;
         }
         
     }
