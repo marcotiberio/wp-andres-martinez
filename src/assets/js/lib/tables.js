@@ -48,5 +48,4 @@ $(".type").click( function() {
 $("#clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
-    $(".type").html('Black to all');
 });
