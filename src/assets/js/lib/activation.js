@@ -1,5 +1,4 @@
-$(document).ready(function() 
-{ 
+$(document).ready(function(){ 
     $("#publications").tablesorter({
         initialized: function(){
             $('#publications').animate({opacity: 'toggle'}, {duration: 400, start: function() {
