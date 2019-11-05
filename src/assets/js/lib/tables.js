@@ -28,7 +28,7 @@ $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
 }),
-$('#wtype').on('click',function(){
+$('#wtype').click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
 });
