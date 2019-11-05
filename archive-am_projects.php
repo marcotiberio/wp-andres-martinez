@@ -5,10 +5,10 @@ get_header(); ?>
     
     <section class="mobilefilter">
         <nav class="mobilefilter-list">
-            <a href="#" class="type" id="<?php get_the_terms($post->ID,'project_types') ?>">Teaching</a>
-            <a href="#" class="type" id="<?php echo $cat; ?>">Residential</a>
-            <a href="#" class="type" id="<?php echo $cat; ?>">Office</a>
-            <a href="#" class="type" id="<?php echo $cat; ?>">Urban Design</a>
+            <a href="#" class="type" id="teaching">Teaching</a>
+            <a href="#" class="type" id="residential">Residential</a>
+            <a href="#" class="type" id="office">Office</a>
+            <a href="#" class="type" id="urban-design">Urban Design</a>
         </nav>
     </section>
     
