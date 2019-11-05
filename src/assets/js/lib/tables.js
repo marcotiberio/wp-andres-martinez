@@ -11,8 +11,8 @@ $('#type').on('click',function(){
 $("#name").on("click", function() {                 //NEW ARROWDOWN-UP
     $("#name .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
     $("#name .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
-    $("#date .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
-    $("#date .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+    $("#date .arrowdown").removeClass("hide"),      //NEW ARROWDOWN-UP
+    $("#date .arrowup").addClass("hide"),        //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")      //NEW ARROWDOWN-UP
 }),
@@ -23,8 +23,8 @@ $('#wdate').on('click',function(){
 $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
     $("#wname .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
     $("#wname .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
-    // $("#wdate .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
-    // $("#wdate .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+    $("#wdate .arrowdown").removeClass("hide"),      //NEW ARROWDOWN-UP
+    $("#wdate .arrowup").addClass("hide"),        //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
 }),
