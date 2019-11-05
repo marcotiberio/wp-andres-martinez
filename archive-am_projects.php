@@ -2,6 +2,16 @@
 get_header(); ?>
 <div class="grid-x grid-padding-x fluid">
     <div class="cell small-12 medium-12">
+
+    <section class="mobilefilter">
+        <nav class="mobilefilter-list">
+            <a href="#">Teaching</a>
+            <a href="#">Residential</a>
+            <a href="#">Office</a>
+            <a href="#">Urban Design</a>
+        </nav>
+    </section>
+    
         <table id="work" class="work tablesorter">
             <thead>
                 <tr>
