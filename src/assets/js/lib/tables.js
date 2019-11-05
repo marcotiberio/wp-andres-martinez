@@ -23,8 +23,8 @@ $('#wdate').on('click',function(){
 $("#wname").on("click", function() {                 //NEW ARROWDOWN-UP
     $("#wname .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
     $("#wname .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
-    $("#wdate .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
-    $("#wdate .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
+    // $("#wdate .arrowdown").toggleClass("hide"),      //NEW ARROWDOWN-UP
+    // $("#wdate .arrowup").toggleClass("hide"),        //NEW ARROWDOWN-UP
 
     $(".description").removeClass("activated")       //NEW ARROWDOWN-UP
 }),
