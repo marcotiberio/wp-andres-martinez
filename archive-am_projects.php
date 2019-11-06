@@ -15,7 +15,7 @@ get_header(); ?>
         <table id="work" class="work tablesorter">
             <thead>
                 <tr>
-                    <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
+                    <th class="sortInitialOrder-desc" id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th class="sorter-false" id="type">Type</th>
                     <th class="clear">Back to all</th>
