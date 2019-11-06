@@ -56,8 +56,3 @@ $(".clear").click(function(){
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 });
-
-$(".work tablesorter").tablesorter({
-    // sort on the first column and second column in ascending order
-    sortList: [[0,0],[1,0]]
-  });
