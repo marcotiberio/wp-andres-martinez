@@ -56,5 +56,3 @@ $(".clear").click(function(){
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 });
-
-$('#work').find('.type').eq(0).val('.type'); $('#work').trigger('search', false);
