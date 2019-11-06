@@ -10,7 +10,6 @@ get_header(); ?>
             <a href="#" class="type">Office</a>
             <a href="#" class="type">Urban Design</a>
         </nav>
-        <!-- <div class="clear"></div> -->
     </section>
     
         <table id="work" class="work tablesorter">
