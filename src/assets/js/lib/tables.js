@@ -50,10 +50,6 @@ $(".type").click( function() {
     $(".sorter-false").toggleClass('hideth');            //SHOW-HIDE TH
 });
 
-$(".type").click(function() {
-    location.hash = "type";
-});
-
 $(".clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");

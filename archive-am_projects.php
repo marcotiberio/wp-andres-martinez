@@ -43,7 +43,7 @@ get_header(); ?>
                 <tr class="<?php foreach ($cats as $cat) { echo $cat; } ?>">
                     <td><?php echo $date; ?></td>
                     <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
-                    <td class="type" id="test" ><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
+                    <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
                 </tr>
                 <?php endwhile; wp_reset_postdata(); ?> 
             </tbody>
