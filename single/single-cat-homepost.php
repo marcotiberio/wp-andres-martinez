@@ -9,7 +9,6 @@
 get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
-ciao
 <div class="main-container">
 	<div class="main-grid">
 		<main class="main-content">
