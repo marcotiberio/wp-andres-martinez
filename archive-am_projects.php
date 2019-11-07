@@ -43,7 +43,7 @@ get_header(); ?>
                 <tr class="<?php foreach ($cats as $cat) { echo $cat; } ?>">
                     <td><?php echo $date; ?></td>
                     <td><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></td>
-                    <td class="type"><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
+                    <td class="type" id="test" ><?php foreach ($tags as $tag) { echo $tag->name; } ?></td>
                 </tr>
                 <?php endwhile; wp_reset_postdata(); ?> 
             </tbody>
@@ -51,4 +51,20 @@ get_header(); ?>
     </div>
     
 </div>
+<script>
+function processAjaxData(response, urlPath){
+     document.getElementById("test").innerHTML = response.html;
+     document.title = response.pageTitle;
+     window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+ }
+
+ window.onpopstate = function(e){
+    if(e.state){
+        document.getElementById("test").innerHTML = e.state.html;
+        document.title = e.state.pageTitle;
+    }
+};
+ </script>
 <?php get_footer();
+
+
