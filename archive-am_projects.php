@@ -51,20 +51,6 @@ get_header(); ?>
     </div>
     
 </div>
-<script>
-function processAjaxData(response, urlPath){
-     document.getElementById("test").innerHTML = response.html;
-     document.title = response.pageTitle;
-     window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
- }
-
- window.onpopstate = function(e){
-    if(e.state){
-        document.getElementById("test").innerHTML = e.state.html;
-        document.title = e.state.pageTitle;
-    }
-};
- </script>
 <?php get_footer();
 
 

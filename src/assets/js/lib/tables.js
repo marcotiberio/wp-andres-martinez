@@ -56,3 +56,16 @@ $(".clear").click(function(){
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 });
+
+function processAjaxData(response, urlPath){
+    document.getElementById("test").innerHTML = response.html;
+    document.title = response.pageTitle;
+    window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+}
+
+window.onpopstate = function(e){
+   if(e.state){
+       document.getElementById("test").innerHTML = e.state.html;
+       document.title = e.state.pageTitle;
+   }
+};
