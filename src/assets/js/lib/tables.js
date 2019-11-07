@@ -48,7 +48,10 @@ $(".type").click( function() {
     $("." + filter).toggleClass('filter');
     $(".tablesorter").toggleClass('filtered');
     $(".sorter-false").toggleClass('hideth');            //SHOW-HIDE TH
+});
 
+$(".type").click(function() {
+    location.hash = "parameter1=123&parameter2=abc";
 });
 
 $(".clear").click(function(){
