@@ -51,7 +51,7 @@ $(".type").click( function() {
 });
 
 $(".type").click(function() {
-    location.hash = "parameter1=123&parameter2=abc";
+    location.hash = "type";
 });
 
 $(".clear").click(function(){
