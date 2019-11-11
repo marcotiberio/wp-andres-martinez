@@ -15,7 +15,7 @@ body.single {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         @include breakpoint(large) {
-            grid-template-columns: 1fr 1fr 1fr !important;
+            grid-template-columns: 1fr 7fr 1fr !important;
             }
     }
 
