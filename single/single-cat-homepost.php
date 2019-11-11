@@ -9,9 +9,7 @@
 get_header(); ?>
 
 <div class="image-single-post">
-	<!-- <div></div> -->
 	<?php get_template_part( 'template-parts/featured-image' ); ?>
-	<!-- <div></div> -->
 </div>
 <div class="main-container">
 	<div class="main-grid">
