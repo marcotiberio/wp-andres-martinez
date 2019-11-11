@@ -8,6 +8,14 @@ body.single {
         }
     }
 
+    .image-single-post {
+        display: grid;
+        grid-template-columns: 1.5rem 1fr 1.5rem;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
     .singleproject {
         padding-top: 0;
         .cell {
@@ -130,16 +138,5 @@ body.single {
                 }
             }
         }
-    }
-}
-
-.image-single-post {
-    display: grid;
-    grid-template-columns: 1.5rem 1fr 1.5rem;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    @include breakpoint(large only) {
-        grid-template-columns: 1fr 8fr 1fr;
     }
 }
