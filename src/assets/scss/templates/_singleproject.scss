@@ -10,14 +10,16 @@ body.single {
 
     .image-single-post {
         padding-top: 3%;
-        display: grid;
-        grid-template-columns: 1.5rem 1fr 1.5rem;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        @include breakpoint(medium) {
-            grid-template-columns: 1fr 7fr 1fr !important;
-            }
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        // display: grid;
+        // grid-template-columns: 1.5rem 1fr 1.5rem;
+        // grid-template-rows: 1fr;
+        // grid-column-gap: 0px;
+        // grid-row-gap: 0px;
+        // @include breakpoint(xl) {
+        //     grid-template-columns: 1fr 7fr 1fr !important;
+        // }
     }
 
     .singleproject {
