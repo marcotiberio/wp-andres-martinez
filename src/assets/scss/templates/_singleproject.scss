@@ -139,4 +139,7 @@ body.single {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    @include breakpoint(large only) {
+        grid-template-columns: 1fr 8fr 1fr;
+    }
 }
