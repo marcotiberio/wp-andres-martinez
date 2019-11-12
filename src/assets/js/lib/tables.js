@@ -49,8 +49,7 @@ $(".type").click( function() {
     $(".tablesorter").toggleClass('filtered');
     $(".sorter-false").toggleClass('hideth');            //SHOW-HIDE TH
 
-    console.log( this );
-    console.log( filter );
+    window.location.hash = filter;
 });
 
 $(".clear").click(function(){
@@ -58,6 +57,7 @@ $(".clear").click(function(){
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 
+    window.location.href.split('#')[0];
 
     console.log( this );
     console.log( filter );
