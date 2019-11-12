@@ -48,10 +48,17 @@ $(".type").click( function() {
     $("." + filter).toggleClass('filter');
     $(".tablesorter").toggleClass('filtered');
     $(".sorter-false").toggleClass('hideth');            //SHOW-HIDE TH
+
+    console.log( this );
+    console.log( filter );
 });
 
 $(".clear").click(function(){
     $("table.filtered").removeClass("filtered");
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
+
+
+    console.log( this );
+    console.log( filter );
 });
