@@ -62,3 +62,15 @@ $(".clear").click(function(){
     console.log( this );
     console.log( filter );
 });
+
+
+if(window.location.hash) {
+
+    var filter = window.location.hash.substr(1);
+    $("." + filter).toggleClass('filter');
+    $(".tablesorter").toggleClass('filtered');
+    $(".sorter-false").toggleClass('hideth');           
+
+    window.location.hash = filter;
+
+}
