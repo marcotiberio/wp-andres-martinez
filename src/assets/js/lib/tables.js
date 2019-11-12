@@ -57,7 +57,7 @@ $(".clear").click(function(){
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 
-    history.replaceState(null, null, ' ');
+    window.location.hash = '';
     
 });
 
