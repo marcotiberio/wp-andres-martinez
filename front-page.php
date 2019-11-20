@@ -5,7 +5,7 @@
                     'post_type' => 'am_projects',
                     'posts_per_page' => -1,
                     'meta_key' => 'feature_on_home',
-                    'meta_value' => '1'
+                    'meta_value' => '1',
                 );
                 $works = new WP_Query( $args ); 
                 while ( $works->have_posts() ) : $works->the_post(); ?>
@@ -23,7 +23,7 @@
     <div id="news" class="cell medium-5 medium-offset-1 hide-for-small-only news">
     <?php $newsargs = array(
         'post_type' => 'post',
-        'posts_per_page' => -1
+        'posts_per_page' => 5
     );
     $newsquery = new WP_Query( $newsargs );
     while ( $newsquery->have_posts() ) : $newsquery->the_post(); ?>
