@@ -27,7 +27,7 @@ get_header(); ?>
                 'post_type' => 'am_projects',
                 'posts_per_page' => -1,
                 'meta_key' => 'year',
-                'orderby' => 'meta_value',
+                'orderby' => 'meta_value_num',
                 'order'	=> 'DESC'
             );
             $works = new WP_Query( $args ); ?>
