@@ -41,6 +41,7 @@ $imprint = get_field('imprint');
             <span>Imprint</span>
             <div class="imprint-text hide">
             &copy; <?php echo (date("Y")." ".substr(get_bloginfo( 'name' ), 0, -1)); ?>
+            <?php echo $imprint; ?>
             </div>
         </div>
     </div>
