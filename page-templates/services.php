@@ -6,7 +6,7 @@ get_header(); ?>
 <?php
 $photo = get_field('photograph');
 $desc = get_field('description');
-$contact = get_field('contact');
+$contact = get_field('rightcolumn');
 ?>
 
 <div class="grid-x grid-padding-x about">
