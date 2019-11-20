@@ -20,7 +20,7 @@ $contact = get_field('contact');
     </div>
     <div class="cell medium-4 small-12 contact">
         <div class="contact-info">
-            <?php echo $contact; ?>
+            <?php echo $rightcolumn; ?>
         </div>
         <?php if( have_rows('social_media') ): ?>
         <ul class="social-media">
