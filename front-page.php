@@ -3,7 +3,7 @@
     <div class="cell medium-6 small-12 projects">
     <?php $args = array(
                     'post_type' => 'am_projects',
-                    'posts_per_page' => 10,
+                    'posts_per_page' => -1,
                     'meta_key' => 'feature_on_home',
                     'meta_value' => '1',
                 );
@@ -23,7 +23,7 @@
     <div id="news" class="cell medium-5 medium-offset-1 hide-for-small-only news">
     <?php $newsargs = array(
         'post_type' => 'post',
-        'posts_per_page' => 5
+        'posts_per_page' => -1
     );
     $newsquery = new WP_Query( $newsargs );
     while ( $newsquery->have_posts() ) : $newsquery->the_post(); ?>
