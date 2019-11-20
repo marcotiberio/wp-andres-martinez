@@ -7,6 +7,7 @@ get_header(); ?>
 $photo = get_field('photograph');
 $desc = get_field('description');
 $contact = get_field('contact');
+$imprint = get_field('imprint');
 ?>
 
 <div class="grid-x grid-padding-x about">
@@ -39,7 +40,7 @@ $contact = get_field('contact');
         <div class="imprint">
             <span>Imprint</span>
             <div class="imprint-text hide">
-            
+            &copy; <?php echo (date("Y")." ".substr(get_bloginfo( 'name' ), 0, -1)); ?>
             </div>
         </div>
     </div>
