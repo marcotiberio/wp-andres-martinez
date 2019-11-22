@@ -23,7 +23,7 @@
     <div id="news" class="cell medium-5 medium-offset-1 hide-for-small-only news">
     <?php $newsargs = array(
         'post_type' => 'post',
-        'posts_per_page' => -1
+        'posts_per_page' => 10
     );
     $newsquery = new WP_Query( $newsargs );
     while ( $newsquery->have_posts() ) : $newsquery->the_post(); ?>
