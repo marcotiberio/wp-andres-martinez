@@ -18,7 +18,7 @@ get_header(); ?>
                 <tr>
                     <th id="date">Date <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
                     <th id="name">Name <span class="arrowup hide">&uarr;</span><span class="arrowdown">&darr;</span></th>
-                    <th class="sorter-false" id="type">Type</th>
+                    <th class="sorter-false" id="type" style="cursor: default;">Type</th>
                     <th class="clear">Back to all</th>
                 </tr>
             </thead>
