@@ -46,7 +46,7 @@ $("#namedisc span").click(function() {
 $(".type").click( function() {
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).toggleClass('filter');
-    $(".tablesorter").toggleClass('filtered');
+    $(".tablesorter").addClass('filtered');
     $(".sorter-false").toggleClass('hideth');            //SHOW-HIDE TH
 
     window.location.hash = filter;
