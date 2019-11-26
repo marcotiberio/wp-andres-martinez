@@ -48,7 +48,7 @@ $(".type").click( function() {
     $(".filter").removeClass("filter");
     $(".sorter-false").removeClass('hideth');          //SHOW-HIDE TH
 
-    window.location.hash = '';
+    // window.location.hash = '';
 
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).addClass('filter');
