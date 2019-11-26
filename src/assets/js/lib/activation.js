@@ -1,6 +1,10 @@
 // LOADER
 
-$('#loader').delay(5000).fadeOut(400)
+// $('#loader').delay(5000).fadeOut(400)
+
+$(document).ready(function() {
+    $("#loader").fadeOut();
+});
 
 $(document).ready(function(){ 
     $("#publications").tablesorter({
