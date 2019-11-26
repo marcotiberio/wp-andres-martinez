@@ -44,7 +44,7 @@ $("#namedisc span").click(function() {
 
 
 $(".type").click( function() {
-    $('.type').removeClass('filter');
+    $('.filter').removeClass('filter');
 
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
     $("." + filter).toggleClass('filter');
