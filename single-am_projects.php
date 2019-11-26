@@ -58,13 +58,15 @@ window.addEventListener('keyup', function(e) {
     switch(e.keyCode) {
       case 38:
         isLTR = true;
+        $('.orbit').foundation('changeSlide', isLTR);
+
         break;
       case 40:
         isLTR = false;
+        $('.orbit').foundation('changeSlide', isLTR);
         break;
     }
 
-    $('.orbit').foundation('changeSlide', isLTR);
 
 });
 
@@ -76,7 +78,7 @@ $(".orbit-container").mousewheel(function() {
   $.data(this, 'timer', setTimeout(function() {
     console.log("Ready")
      isAnimating = false;
-  }, 50));
+  }, 50)); //150 original value
 });
 });
 
