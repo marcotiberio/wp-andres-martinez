@@ -76,7 +76,7 @@ $(".orbit-container").mousewheel(function() {
   $.data(this, 'timer', setTimeout(function() {
     console.log("Ready")
      isAnimating = false;
-  }, 150));
+  }, 3000));
 });
 });
 
