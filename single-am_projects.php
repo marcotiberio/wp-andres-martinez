@@ -47,7 +47,8 @@ $('.orbit-container').mousewheel(function(event){
         } else {
         var  isLTR = false;
             $('.orbit').foundation('changeSlide', isLTR);
-        }   
+        }
+        console.log(isLTR);   
     } 
 });
 $('.orbit').on('beforeslidechange.zf.orbit', function() {
