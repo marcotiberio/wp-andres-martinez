@@ -6,10 +6,6 @@ $(document).ready(function() {
     $("#loader").fadeOut();
 });
 
-$(document).ready(function() {
-    $("#loader1").fadeOut();
-});
-
 $(document).ready(function(){ 
     $("#publications").tablesorter({
         initialized: function(){

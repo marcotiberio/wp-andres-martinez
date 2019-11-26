@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="loader1"></div>
+<div id="loader"></div>
 
 <div class="grid-x grid-padding-x overview">
     <div class="cell medium-6 small-12 projects">
