@@ -47,7 +47,7 @@ $(".type").click( function() {
     $('.filter').removeClass('filter');
 
     var filter = $(this)[0].textContent.toLowerCase().replace(' ', '_');
-    $("." + filter).toggleClass('filter');
+    $("." + filter).addClass('filter');
     $(".tablesorter").toggleClass('filtered');
     $(".sorter-false").toggleClass('hideth');            //SHOW-HIDE TH
 
