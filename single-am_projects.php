@@ -51,6 +51,23 @@ $('.orbit-container').mousewheel(function(event){
         console.log(isLTR);   
     } 
 });
+
+window.addEventListener('keyup', function(e) {
+    var isLTR;
+
+    switch(e.keyCode) {
+      case 38:
+        isLTR = true;
+        break;
+      case 40:
+        isLTR = false;
+        break;
+    }
+
+    $('.orbit').foundation('changeSlide', isLTR);
+
+});
+
 $('.orbit').on('beforeslidechange.zf.orbit', function() {
     isAnimating = true;
 });
