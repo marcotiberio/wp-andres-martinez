@@ -9,7 +9,7 @@ $desc = get_field('description');
 $rightcolumn = get_field('rightcolumn');
 ?>
 
-<div class="loader"></div>
+<div id="loader"></div>
 
 <div class="grid-x grid-padding-x about">
     <div class="cell medium-2 small-12 photograph">
