@@ -10,6 +10,8 @@ $contact = get_field('contact');
 $imprint = get_field('imprint');
 ?>
 
+<div id="loader"></div>
+
 <div class="grid-x grid-padding-x about">
     <div class="cell medium-2 small-12 photograph">
         <img src="<?php echo $photo[url]; ?>" alt="<?php echo $photo[alt]; ?>">
