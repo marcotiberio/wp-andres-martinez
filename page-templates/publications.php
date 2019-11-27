@@ -9,11 +9,12 @@ get_header(); ?>
         <section class="mobilefilter">
             <nav class="mobilefilter-list">
                 <a href="#" class="clear">All</a>
-                <a href="#" class="type">Proceedings</a>
-                <a href="#" class="type">Chapter</a>
-                <a href="#" class="type">Review</a>
-                <a href="#" class="type">Published Work</a>
                 <a href="#" class="type">Article</a>
+                <a href="#" class="type">Chapter</a>
+                <a href="#" class="type">Proceedings</a>
+                <a href="#" class="type">Published Work</a>
+                <a href="#" class="type">Review</a>
+                
             </nav>
         </section>
 
