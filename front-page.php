@@ -2,7 +2,7 @@
 
 <div id="loader"></div>
 
-<div class="grid-x grid-padding-x overview">
+<div class="grid-x grid-padding-x overview" id="frontpage-fadein">
     <div class="cell medium-6 small-12 projects">
     <?php $args = array(
                     'post_type' => 'am_projects',
